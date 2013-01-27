@@ -1,3 +1,17 @@
-$("nav select").change(function() {
-  window.location = $(this).find("option:selected").val();
-});
+( function ( $ ){
+
+		$("nav select").change(function() {
+			  window.location = $(this).find("option:selected").val();
+		});
+		
+		
+	
+}(jQuery));
+
+
+
+
+
+
+
+
