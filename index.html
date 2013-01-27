@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!--[if lt IE 9]>	<script src="js/html5shiv.js"></script><![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        
+        <header>
+       	 	<h1><a href="index.html"><img src="./img/logo.png" alt="Logo Sebio" id="logo"/></a></h1>
+       	 	<h2>Produits naturels, bio et écologiques pour toute la famille</h2>
+       	 	<div id="droiteheader">
+       	 		<a href="panier.html"><img src="./img/panier.png" alt="panier" /></a>
+	       	 	<a href="register.html">S'inscrire</a> | 
+	       	 	<a href="login.html">S'enregistrer</a>
+	       	 	<form>
+	       	 		<input type="search" />
+	       	 		<input id="submit" type="image" src="./img/loupe.png" value ="" alt="chercher" />
+	       	 	</form>
+       	 	</div>
+       	 	<nav>
+       	 		<ul>
+       	 			<li><a href="index.html" class="current">Accueil</a></li>
+       	 			<li><a href="bonplans.html">Bon Plans</a></li>
+       	 			<li><a href="enfant.html">Enfant</a></li>
+       	 			<li><a href="mode.html">Mode</a></li>
+       	 			<li><a href="sante.html">Santé et Nature</a></li>
+       	 			<li><a href="maison.html">Maison et Loisirs</a></li>
+       	 			<li><a href="contact.html">Contact</a></li>
+       	 		</ul>
+       	 		<select> 
+				    <option value="" selected="selected">Menu</option> 
+				    <option value="index.html">Accueil</option> 
+				    <option value="bonplans.html">Bons Plans</option> 
+				    <option value="enfant">Enfants</option> 
+				    <option value="mode.html">Mode</option> 
+				    <option value="sante.html">Santé et Nature</option>
+				    <option value="maison.html">Maison et Loisirs</option>
+				    <option value="contact.html">Contact</option> 
+				 </select> 
+       	 	</nav>
+        </header>
+        
+        <section id="content">
+        	<div id="decouverte">
+		        <img id="premier" src="./img/confitures.jpg" alt="Mis en Avant" />
+		        <p><span>Découvrez</span> nos confitures bio</p>
+        	</div>
+	        	<section id="promo" itemtype="http://schema.org/Product">
+			        <h1>Promo</h1>
+			        <img src="./img/promo.png" alt="produit en promo" />
+			        <span itemprop="price" class="price">16&euro;</span>
+	        	</section>
+		        
+		        
+		       <section id="newprod">
+			        <h2>Nouveaux produits</h2>
+			        
+			        <article itemscope itemtype="http://schema.org/Product" >
+			        	<hgroup>
+				        	<h3 itemprop="name">Crème </h3>
+				        	<h4 itemprop="brand">Olivia</h4>
+			        	</hgroup>
+			        	<img src="./img/creme.png" itemprop="image" alt="ensemble crème artemis" />
+			        	<span itemprop="price" class="price">16&euro;</span>
+			        	<p itemprop="description">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+			        	<a href="produit.html" class="info">Voir informations</a>
+			        	 
+			        	 <a href="" class="addbasket">Ajouter au panier</a>
+			        </article>
+			        
+			         <article itemscope itemtype="http://schema.org/Product" >
+			        	<hgroup>
+				        	<h3 itemprop="name">Gel main</h3>
+				        	<h4 itemprop="brand">Garnier</h4>
+			        	</hgroup>
+			        	<img src="./img/poussemousse.png"  itemprop="image" alt="ensemble crème artemis" />
+			        	<span itemprop="price" class="price">9,99&euro;</span>
+			        	<p itemprop="description">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+			        	<a href="produit.html" class="info">Voir informations</a>
+			        	 
+			        	<a href="" class="addbasket">Ajouter au panier</a>
+			        </article>
+			        
+			         <article itemscope itemtype="http://schema.org/Product" >
+			        	<hgroup>
+				        	<h3 itemprop="name">Savon Noir</h3>
+				        	<h4 itemprop="brand">Orema</h4>
+			        	</hgroup>
+			        	<img src="./img/savonnoir.png" itemprop="image" alt="ensemble crème artemis" />
+			        	<span itemprop="price" class="price">19&euro;</span>
+			        	<p itemprop="description">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+			        	<a href="produit.html" class="info">Voir informations</a>
+			        	 
+			        	 <a href="" class="addbasket">Ajouter au panier</a>
+			        </article>
+			        
+			         <article itemscope itemtype="http://schema.org/Product" >
+			        	<hgroup>
+				        	<h3 itemprop="name">Savon</h3>
+				        	<h4 itemprop="brand">Marsaillais</h4>
+			        	</hgroup>
+			        	<img src="./img/savon.png" itemprop="image" alt="ensemble crème artemis" />
+			        	<span itemprop="price" class="price">33&euro;</span>
+			        	<p itemprop="description">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+			        	<a href="produit.html" class="info">Voir informations</a>
+			        	 
+			        	 <a href="" class="addbasket">Ajouter au panier</a>
+			        </article>
+		        </section>
+		        
+		        <section id="vedetteprod">
+				        <h2>Produits vedettes</h2>
+				        
+			         <article itemscope itemtype="http://schema.org/Product" >
+				        	<hgroup>
+					        	<h3 itemprop="name">Huille d'olive</h3>
+					        	<h4 itemprop="brand">Biotime</h4>
+				        	</hgroup>
+				        	<img src="./img/huilleolive.png" itemprop="image" alt="ensemble crème artemis" />
+				        	<span itemprop="price" class="price">12,5&euro;</span>
+				        	<p itemprop="description">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+				        	<a href="produit.html" class="info">Voir informations</a>
+				        	 
+				        	 <a href="" class="addbasket">Ajouter au panier</a>
+				        </article>
+				        
+			         <article itemscope itemtype="http://schema.org/Product" >
+				        	<hgroup>
+					        	<h3 itemprop="name">Herbes</h3>
+					        	<h4 itemprop="brand">Mithra</h4>
+				        	</hgroup>
+				        	<img src="./img/herbes.png" itemprop="image" alt="ensemble crème artemis" />
+				        	<span itemprop="price" class="price">14,5&euro;</span>
+				        	<p itemprop="description">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+				        	<a href="produit.html" class="info">Voir informations</a>
+				        	 
+				        	 <a href="" class="addbasket">Ajouter au panier</a>
+				        </article>
+				        
+			         <article itemscope itemtype="http://schema.org/Product" >
+				        	<hgroup>
+					        	<h3 itemprop="name">Crème de nuit</h3>
+					        	<h4 itemprop="brand">Artémis</h4>
+				        	</hgroup>
+				        	<img src="./img/huilles.png" itemprop="image" alt="ensemble crème artemis" />
+				        	<span itemprop="price" class="price">23&euro;</span>
+				        	<p itemprop="description">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+				        	<a href="produit.html" class="info">Voir informations</a>
+				        	 
+				        	 <a href="" class="addbasket">Ajouter au panier</a>
+				        </article>
+				        
+			         <article itemscope itemtype="http://schema.org/Product" >
+				        	<hgroup>
+					        	<h3 itemprop="name">Crème de nuit</h3>
+					        	<h4 itemprop="brand">Maudoight</h4>
+				        	</hgroup>
+				        	<img src="./img/miel.png" itemprop="image" alt="ensemble crème artemis" />
+				        	<span itemprop="price" class="price">5&euro;</span>
+				        	<p itemprop="description">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+				        	<a href="produit.html" class="info">Voir informations</a>
+				        	 
+				        
+				        	 <a href="" class="addbasket">Ajouter au panier</a>
+				        </article> 
+				        <div class="clear"></div> 
+		        </section> 
+        </section>
+        
+        <footer>
+	        <div>
+	        	<h1>Contact</h1>
+	        	<!-- Mettre une hcard -->
+	        <ul>
+	        	<li>Sébio</li>
+	        	<li>Rue de la boverie</li>
+	        	<li>5300 Andenne</li>
+	        	<li>tél : 0470 45 65 24</li>
+	        	<li><a href="mailto:contact@sebio.com">mail: info@sebio.com</a></li>
+	        </ul>
+	        </div>
+	        <div>
+		        <h1>Information</h1>
+		        <ul>
+		        	<li><a href="">Annonces légales</a></li>
+		        	<li><a href="condition.html">Conditions générales de vente</a></li>
+		        	<li><a href="">Notre entreprise</a></li>
+		        </ul>
+	        </div>
+	        <div>
+		        <h1>Compte</h1>
+		        <ul>
+		        	<li><a href="login.html">Log In</a></li>
+		        	<li><a href="panier.html">Panier</a></li>
+		        	<li><a href="register.html">Créer un compte</a></li>
+		        	<li><a href="">Inscription à la Newsletter</a></li>
+		        </ul>
+	        </div>
+	        <div>
+		        <h1>Paiement</h1>
+		        <img src="./img/paiement.png" alt="methode de paiement" />
+		        
+	        </div>
+	        <div class="clear"></div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

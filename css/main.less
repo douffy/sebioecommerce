@@ -1,0 +1,805 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@vert: #478073;
+@vertfonce: #2b4d45;
+@backcolor: rgba(255,255,255,.9);
+
+html{
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+}
+
+body {
+	margin:0 auto;
+	width:1050px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 20px;
+}
+
+header {
+	width:940px;
+	padding:  5px 55px 0 55px;
+	background-color: red;
+	background-color: @backcolor;
+	
+	h2{
+		color: #474747;
+		font-family: "Helvetica Neue";
+		font-size: 24px;
+		width:230px;
+		float:left;
+		font-weight: 200;
+		line-height: 34px;
+	}
+	
+	form{
+		margin-top: 30px;
+	}
+	
+	#submit{
+		width:25px;
+		height:20px;
+		background-color:inherit;
+		border:none;
+		margin: 0 0 0 -35px;
+		vertical-align: middle;
+	}
+}
+
+#droiteheader{
+	float:right;
+	font-size: 20px;
+	
+	a{
+		text-decoration: none; 
+		color: @vert;
+		text-align: right;
+	}
+}
+
+nav {
+	ul{
+		border-top:1px solid #aaa;
+		margin-top: 25px;
+		clear: both;
+		height:100%;
+		width:100%;
+		padding: 18px 0;
+		li{
+			display: inline;
+			text-transform: uppercase;
+			a{
+				text-decoration: none;
+				color:#000;
+				padding: 19px;
+			}
+			
+			a:hover{
+				background-color: @vert;
+				color:white;
+				-webkit-transition-duration: 0.7s;
+				-webkit-transition-timing-function: ease ;
+				-moz-transition-duration: 0.7s;
+				-moz-transition-timing-function: ease ;
+				
+			}
+		}
+	}
+}
+
+.current{
+	background-color: @vert;
+	color:white;
+}
+	
+#logo{
+	float:left;
+	padding: 0 15px 15px 0;
+}
+
+
+#content {
+	background-color: @backcolor;
+	padding:55px;
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+}
+
+#premier{
+	float:left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+article{
+	float:left;
+	width:220px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	
+	img{
+		margin-bottom:10px;
+	}
+	
+	h3 {
+		font-weight: 100;
+		text-align: center;
+		font-size: 22px;
+		margin-bottom: 2px;
+		text-transform: uppercase;
+	}
+	
+	h4{
+		text-align: center;
+		margin:7px;
+		color:@vert;
+		font-weight: 100;
+	}
+	
+	h4:before{
+		font-weight: 100;
+		content: "";
+		height: 1px;
+	    width: 20px;
+	    background: @vert;
+        display: inline-block;
+	    vertical-align: middle;
+	    margin: 5px;
+	}
+	
+	h4:after{
+		font-weight: 100;
+		content: "";
+		height: 1px;
+	    width: 20px;
+	    background: @vert;
+        display: inline-block;
+	    vertical-align: middle;
+	    margin: 5px;
+	}
+	p{
+		margin-bottom: 7px;
+	}
+}
+
+#produit{
+	width:700px;
+	margin-right: 20px;
+	float:left;
+	
+	.price{
+		margin-top: 0;
+		font-size: 3.5em;
+	}
+	img{
+		float:left;
+		border:1px dotted #ababab;
+		margin-right: 20px;
+		margin-bottom: 30px;
+	}
+	
+	h3{
+		text-transform: uppercase;
+		font-weight: 100;
+	}
+	
+	.addbasket{
+		float: left;
+		width:130px;
+	}
+	
+	h4{
+		clear: both;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 100;
+		border: 1px solid @vertfonce;
+		padding:10px;
+		color:@vertfonce;
+	}
+	
+	h5{
+		font-size: 1.1em;
+		margin-bottom: 0px;
+	}
+}
+
+#aside{
+	float:left;
+	width:220px;
+	
+	h2{
+		line-height: 1.1em;
+	}
+	
+	h3{
+		text-transform: uppercase;
+		font-weight: 100;
+		text-align: center;
+		margin-top: 0;
+		line-height: 1.1em;
+	}
+	
+	article{
+		border-bottom: 1px dotted #ababab;
+		padding-bottom: 10px;
+	}
+	
+	article:last-child{
+		border-bottom: none;
+	}
+}
+
+
+footer{
+	h1{
+		font-weight: 100;
+	}
+	ul {
+		padding-left: 0;
+	
+		li{
+		list-style-type: none;
+		}
+	}
+	
+	clear:both;
+	background-color: @backcolor;
+	width:940px;
+	padding: 20px 55px;
+	
+	div{
+		float:left;
+		margin-right: 20px;
+		width:220px;
+	}
+	
+	div:nth-of-type(4){
+		margin-right:0;
+	}
+	
+	a{
+		text-decoration: none;
+		color:black;
+	}
+	
+	a:hover{
+		color:@vertfonce;
+	}
+	
+	img{
+		margin-bottom: 5px;
+	}
+}
+
+#decouverte{
+
+	position: relative;
+	img{
+		
+	}	
+	
+	span{
+		font-size: 1.4em;
+	}
+	p{
+		position:absolute;
+		background-color: rgba(255,255,255,.8);
+		color:white;
+		font-size: 30px;
+		color:black;
+		line-height: normal;
+		padding:20px;
+		margin-top: 20px;
+		top: 218px;
+	}
+
+	
+	
+}
+
+#promo{ 
+	
+	h1{
+		background-color: @vert;
+		width:220px;
+		font-weight: 100;
+		text-transform: uppercase;
+		padding: 35px 0;
+		margin: 0;
+		float:right;
+		text-align: center; 
+		color:#fff;	
+	}
+	
+	img{
+		float:right;
+	}
+}
+
+
+section {
+		
+	
+	h2{
+		clear:both;
+		margin-top: 20px;
+		text-align: center;
+		color: #fff;
+		padding:12px;
+		font-weight: 100;
+		background-color: @vert;
+		text-transform: uppercase;
+	}
+}
+
+article:nth-of-type(4), article:nth-of-type(8){
+	margin-right:0;
+}
+
+
+.clear {
+	clear:both;
+	float: none;
+}
+
+.price{
+	font-size: 40px;
+	margin-top: -40px;
+	margin-left:-15px;
+	text-shadow: 1px 1px 1px #f0f0f0;
+    filter: dropshadow(color=#f0f0f0, offx=2, offy=2);
+    color:#e00000;
+    display: block;
+}
+
+#promo .price{
+	position: relative;
+	display: inline-block;
+	background-color: #c72e2e;
+	padding: 30px;
+	color:white;
+	text-shadow: none;
+	bottom:42px;
+	left:109px;
+   border-radius: 90px 0 0 0;
+   -moz-border-radius: 90px 0 0 0;
+    -webkit-border-radius: 90px 0 0 0;
+   
+}
+
+.info{
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 0.8em;
+	display: block;
+	text-decoration: none;
+	color:@vert;
+	margin-bottom: 10px;
+}
+
+.addbasket{
+	background-color: @vertfonce;
+	color:#FFF;
+	padding:16px;
+	margin:0 auto;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	border: 1px dotted #2b4d45;
+	
+}
+
+.addbasket:hover{
+	background-color: #fff;
+	color:#2b4d45;
+	border: 1px dotted @vertfonce;
+	-webkit-transition-duration: 0.7s;
+	-webkit-transition-timing-function: ease ;
+	-moz-transition-duration: 0.7s;
+	-moz-transition-timing-function: ease ;
+}
+
+.addbasket:active{
+	-webkit-box-shadow: inset 1px 1px 10px 1px @vert;
+    box-shadow: inset 1px 1px 10px 1px @vert;
+	color:#2b4d45;
+	border: 1px dotted #2b4d45;
+	-webkit-transition-duration: 0.7s;
+	-webkit-transition-timing-function: ease ;
+	-moz-transition-duration: 0.7s;
+	-moz-transition-timing-function: ease ;
+}
+
+
+*::selection {
+	background:#3043af;
+	color:#fff;
+}
+
+*::-moz-selection {
+	background:#3043af;
+	color:#fff;
+}
+
+*::-webkit-selection {
+	background:#3043af;
+	color:#fff;
+}
+
+#contact{
+	 padding:10px;
+	 width:40%;
+	
+	fieldset {
+	 padding:0 20px 20px 20px;
+	 margin-bottom:10px;
+	 border:1px dotted @vertfonce;
+	 }
+	legend {
+	 color:@vertfonce;
+	 padding: 0 20px;
+	 font-size: 1.2em;
+	 text-align: center;
+	 text-transform: uppercase;
+	 }
+	label {
+	 margin-top:10px;
+	 display:inline-block;
+	 }
+	
+	input{
+		padding: 7px;
+		width:95%;
+		font-size: 0.8em;
+	}
+	textarea{
+		width:95%;
+		padding:7px;
+	}
+	
+	select{
+		overflow: hidden;
+		padding: 7px;
+	    background: url(../img/select.jpg) no-repeat right ;
+	    border: 1px solid #ccc;
+	    display: block;
+	    width:95%;
+	}
+}
+
+table{
+	width:100%;
+	
+	th{
+		text-align: left;
+		border-bottom: 1px solid @vertfonce;
+		padding: 15px 0;
+		margin-bottom: 15px;
+	}
+	
+	td{
+		padding:10px;
+	}
+	
+	tr:nth-child(even){
+		background-color: #ececec;
+		
+	}
+	
+	tr:last-child{
+		font-weight: bold;
+		font-size: 1.1em;
+	}
+	
+	a{
+		color:@vertfonce;
+		text-decoration: none;
+	}
+}
+
+#panier input[type="submit"]{
+	float:right;
+	background-color: @vert;
+    border: 1px dotted #2B4D45;
+    color: #FFFFFF;
+    display: block;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+#panier input[type="submit"]:hover{
+	background-color: #fff;
+	color:@vertfonce;
+}
+#panier input[type="submit"]:active{
+	-webkit-box-shadow: inset 1px 1px 10px 1px @vert;
+    box-shadow: inset 1px 1px 10px 1px @vert;
+	color:#2b4d45;
+	border: 1px dotted #2b4d45;
+	-webkit-transition-duration: 0.7s;
+	-webkit-transition-timing-function: ease ;
+	-moz-transition-duration: 0.7s;
+	-moz-transition-timing-function: ease ;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
